@@ -5,6 +5,7 @@ import { lawnmowing } from "./lawnmowing.jsx";
 import { airquality } from "./airquality.jsx";
 import { yeeHa } from "./yeeha.jsx";
 import { View } from 'react-native';
+import { Slope } from './Slope.jsx';
 
 export default function App() {
   return (
@@ -29,6 +30,9 @@ export default function App() {
       <yeeHa number={14} />
       <yeeHa number={21} />
       <yeeHa number={10} />
+      <Slope x1={0} y1={0} x2={2} y2={2} />
+      <Slope x1={0} y1={2} x2={2} y2={0} />
+      <Slope x1={1} y1={3} x2={5} y2={3} />
     </View>
   );
 }
