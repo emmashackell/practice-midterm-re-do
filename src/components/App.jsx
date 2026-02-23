@@ -3,8 +3,8 @@ import { SnowRemoval } from './SnowRemoval.jsx';
 import { squarefeettoacres } from "./squarefeettoacres.jsx";
 import { lawnmowing } from "./lawnmowing.jsx";
 import { airquality } from "./airquality.jsx";
-  View,
-} from 'react-native';
+import { yeeHa } from "./yeeha.jsx";
+import { View } from 'react-native';
 
 export default function App() {
   return (
@@ -25,6 +25,10 @@ export default function App() {
       <airquality aqi={175} />
       <airquality aqi={250} />
       <airquality aqi={350} />
+      <yeeHa number={9} />
+      <yeeHa number={14} />
+      <yeeHa number={21} />
+      <yeeHa number={10} />
     </View>
   );
 }
